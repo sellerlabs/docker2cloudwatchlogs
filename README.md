@@ -65,6 +65,7 @@ For all container definitions in all services in the cluster, use the "syslog" l
 ## Environment Variables
 Takes up to 3 environment variables.  If you don't set AWS_LOGS_CONF_URL, you will at least want to set LOG_GROUP_NAME.
 
+* AWS_REGION: Will direct logs to the given region; efault is us-east-1
 * AWS_LOGS_CONF_URL: Will slurp in an entire aws cloudwatch logs config file
 * LOG_STREAM_NAME_PREFIX: a prefix on cloudwatch log stream destinations
 * LOG_GROUP_NAME: which log group will this log to
